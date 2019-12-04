@@ -1,0 +1,45 @@
+  <div class="modal modal--work fade" id="modal-{{hyphenize project}}">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="work--partner">{{{partner}}}</h3>
+        <h2 class="work--project">{{{project}}}</h2>
+        <div class="work--tags">
+        {{#each tags}}
+          <span class="work-tag" data-toggle="tag">{{this}}</span>
+        {{/each}}
+        </div>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/images/work/{{image}}.jpg" alt="{{project}}" class="work--image" />
+        <div class="modal-body-text">
+          <div class="work--challenge">
+            {{#each (reformat challenge)}}
+              {{>list}}
+            {{/each}}
+          </div>
+          <div class="work--solution">
+            {{#each (reformat solution)}}
+              {{>list}}
+            {{/each}}
+          </div>
+          <div class="work--outcome">
+            {{#each (reformat outcome)}}
+              {{>list}}
+            {{/each}}
+          </div>
+          <div class="work--tools">
+            {{#each (reformat tools)}}
+              {{>list}}
+            {{/each}}
+          </div>
+          {{!-- <div class="work--tags">{{{tags}}}</div> --}}
+          {{!-- <div class="work--metadata">{{{metadata}}}</div> --}}
+          {{!-- <div class="work--lead">{{{lead}}}</div> --}}
+          {{!-- <div class="work--testimonial">{{{testimonial}}}</div> --}}
+        </div>
+      </div>
+    </div>
+      <div class="modal-close">
+        <a href="#" data-close="modal" tabindex="0"></a>
+      </div>
+  </div>

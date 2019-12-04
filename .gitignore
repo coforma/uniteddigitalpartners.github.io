@@ -1,0 +1,22 @@
+*.sublime*
+.sass-cache
+.DS_Store
+**.log
+*.log
+cache
+package-lock.json
+.htpasswd
+
+# dependencies
+node_modules
+
+# generated files
+/index.html
+/work/*.html
+/assets
+/src/css
+
+# misc
+logging-in.txt
+/vendor
+

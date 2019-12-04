@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 49.1 49" style="enable-background:new 0 0 49.1 49;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FDBD16;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:#06B9EC;}
+	.st3{fill:url(#SVGID_2_);}
+	.st4{fill:#006F92;}
+	.st5{fill:url(#SVGID_3_);}
+	.st6{fill:#D13C9A;}
+	.st7{fill:#009282;}
+</style>
+<path class="st0" d="M4.3,36.9l0.2,0.2l0-0.4L4.3,36.9z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="19.5729" y1="24.0446" x2="28.8153" y2="2.8964" gradientTransform="matrix(1 0 0 -1 0 50)">
+	<stop  offset="0" style="stop-color:#32E1A5"/>
+	<stop  offset="1" style="stop-color:#25BDAD"/>
+</linearGradient>
+<path class="st1" d="M24.5,28L4.7,37.2L24.5,49l19.8-11.8L24.5,28z"/>
+<path class="st0" d="M44.4,37.1l0.3-0.2l-0.2-0.2L44.4,37.1z"/>
+<path class="st2" d="M4.5,37.2l0.1-0.1l-0.1-0.1L4.5,37.2z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0.4521" y1="38.7336" x2="20.0537" y2="26.7401" gradientTransform="matrix(1 0 0 -1 0 50)">
+	<stop  offset="0" style="stop-color:#32E1A5"/>
+	<stop  offset="1" style="stop-color:#25BDAD"/>
+</linearGradient>
+<path class="st3" d="M19.5,0l-17,7.8l1.9,28.8l16.6-13.2L19.5,0z"/>
+<path class="st4" d="M21.1,23.5L4.5,36.7l0,0.4l0.1,0.1l16.8-7.8L21.1,23.5z"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="26.2032" y1="39.4955" x2="45.8048" y2="27.502" gradientTransform="matrix(1 0 0 -1 0 50)">
+	<stop  offset="0" style="stop-color:#32E1A5"/>
+	<stop  offset="1" style="stop-color:#25BDAD"/>
+</linearGradient>
+<path class="st5" d="M46.4,7.8L29.4,0l-1.6,23.5l16.6,13.2L46.4,7.8z"/>
+<path class="st6" d="M44.4,37.2l0-0.2l-0.1,0.1L44.4,37.2z"/>
+<path class="st4" d="M27.9,23.5l-0.4,5.9l16.8,7.8l0.1-0.1l0-0.4L27.9,23.5z"/>
+<path class="st7" d="M24.5,49l19.8-11.8L24.5,28"/>
+</svg>

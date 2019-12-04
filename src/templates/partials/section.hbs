@@ -1,0 +1,31 @@
+	<div class="section section-{{style}}" id="{{section}}">
+
+		{{#if (eq section "hero")}}
+			<a href="#" class="w-inline-block" tabindex="0"><img src="./assets/images/logo-white.png" width="50" alt="&Partners"></a>
+			<a href="#contact-us" class="button-primary button-black button-header w-button" tabindex="0">Let&#x27;s Talk</a>
+			<div class="cover-header-spacing">
+		{{/if}}
+		<h4 class="section-header" tabindex="0">{{heading}}</h4>
+
+		<div class="container-margin w-container {{hyphenize section}}-container">
+			<div class="body-text">
+				{{#if carousel}}
+				{{>work-carousel}}
+				{{else}}
+				{{{encodeParagraph copy}}}
+				{{/if}}
+			</div>
+		</div>
+
+		{{#if copy2}}
+		<div class="container-margin w-container">
+			<div class="body-text">
+				<h2>{{{encodeParagraph copy2}}}</h2>
+			</div>
+		</div>
+		{{/if}}
+
+		{{#if (eq section "hero")}}
+			</div>
+		{{/if}}
+	</div>
