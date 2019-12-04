@@ -31,3 +31,10 @@ I'll get to this tomorrow, but in a nutshell:
 $ scripts/build
 $ git push --force origin latest:master
 ```
+
+### Running locally
+
+```
+$ python -m SimpleHTTPServer
+```
+
