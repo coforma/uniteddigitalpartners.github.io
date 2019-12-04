@@ -2,6 +2,9 @@ $white: #fff;
 $black: #17181a;
 $pitch-black: #000;
 
+$color-udp-purple: #010658;
+$color-udp-orange: #FF5C00;
+
 $blue: #0071bb;
 $medium-blue: #01a6d2;
 $light-blue: #3898ec;
@@ -27,9 +30,13 @@ $lightest-gray: #fafafa;
 $text: $dark-gray;
 $light-text: $light-gray;
 
-$font: akagi-pro, sans-serif;
-$serif-font: ff-tisa-web-pro,sans-serif;
-$fixed-font: monospace, monospace;
+$font: 'Overpass', sans-serif;
+$serif-font: 'Overpass', sans-serif;
+$fixed-font: 'Overpass', sans-serif;
+
+$font-black: 900;
+$font-bold: 700;
+$font-normal: 400;
 
 
 $gutter-large: 60px;
