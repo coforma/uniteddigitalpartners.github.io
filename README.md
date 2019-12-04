@@ -14,7 +14,20 @@ Then use [grunt](https://http://gruntjs.com/) to generate the code:
 ```
 $ grunt
 ```
+If you're ready to commit a new version of the code, use the `grunt:bump` task to move the needle:
+```
+$ grunt bump:patch
+```
+or
+```
+$ grunt bump:minor
+```
+
 
 ### Publishing
 
-I'll get to this tomorrow.
+I'll get to this tomorrow, but in a nutshell:
+```
+$ scripts/build
+$ git push --force origin latest:master
+```

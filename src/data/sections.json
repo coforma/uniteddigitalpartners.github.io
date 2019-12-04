@@ -1,5 +1,5 @@
-[
-  {
+{
+  "hero": {
     "section": "hero",
     "style": "hero",
     "heading": "Hello",
@@ -7,7 +7,7 @@
     "copy2": "We believe in ethical, inclusive design that is transparent, open source, and Veteran-centric.",
     "carousel": null
   },
-  {
+  "about-us": {
     "section": "about-us",
     "style": null,
     "heading": "About",
@@ -15,7 +15,7 @@
     "copy2": "We retain historically disadvantaged business certifications through our ownership, including HUBZone and SDVOSB designations that make us eligible for set-asides. Our leadership is comprised of immigrants and users of VA systems. ",
     "carousel": null
   },
-  {
+  "competencies": {
     "section": "competencies",
     "style": null,
     "heading": "Core Competencies",
@@ -23,7 +23,7 @@
     "copy2": null,
     "carousel": null
   },
-  {
+  "our-work": {
     "section": "our-work",
     "style": null,
     "heading": "Our Work",
@@ -31,7 +31,7 @@
     "copy2": "There's a lot more we've done, but we want to talk about what we can do next--with you. ",
     "carousel": true
   },
-  {
+  "our-approach": {
     "section": "our-approach",
     "style": null,
     "heading": "Our Approach",
@@ -39,7 +39,7 @@
     "copy2": null,
     "carousel": null
   },
-  {
+  "differentiators": {
     "section": "differentiators",
     "style": null,
     "heading": "Differentiators",
@@ -47,7 +47,7 @@
     "copy2": null,
     "carousel": null
   },
-  {
+  "contact-us": {
     "section": "contact-us",
     "style": null,
     "heading": "Let's Talk",
@@ -55,7 +55,7 @@
     "copy2": "CONTACT FORM",
     "carousel": null
   },
-  {
+  "social": {
     "section": "social",
     "style": null,
     "heading": null,
@@ -63,7 +63,7 @@
     "copy2": null,
     "carousel": null
   },
-  {
+  "footer": {
     "section": "footer",
     "style": null,
     "heading": null,
@@ -71,4 +71,4 @@
     "copy2": null,
     "carousel": null
   }
-]
+}
