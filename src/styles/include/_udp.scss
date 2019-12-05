@@ -1,10 +1,18 @@
 h1 {
   max-width: 720px;
   margin: 0;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.5;
   font-weight: 300;
   font-weight: $font-black;
+
+  @media (min-width: $medium) {
+    font-size: 43px;
+  }
+
+  @media (min-width: $wide) {
+    font-size: 43px;
+  }
 }
 h2 {
   max-width: 720px;
@@ -82,17 +90,59 @@ a {
   }
 }
 
+.site-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .button-header {
+    display: none;
+
+    @media (min-width: $medium) {
+      display: inline-block
+    }
+  }
+}
+
 .section-hero {
   color: $white;
   background-image: url('./images/hero.png');
   background-position: 0px 0px, 50% 50%;
   background-size: cover;
-  min-height: 90vh;
+  padding-bottom: 100px;
 
   +.section-dark {
     .section-header {
       color: $white;
     }
+  }
+}
+
+.section-hero__logo-container {
+  align-items: center;
+  display: flex;
+}
+
+.section-hero__logo {
+  display: block;
+}
+
+.section-hero__logo--sdvosb {
+  width: 74px;
+  height: 74px;
+}
+
+.section-hero__logo--ncgvifp {
+  width: 117px;
+  height: 80px;
+  margin-left: 16px;
+}
+
+.hero-mobile-button {
+  margin: 36px 0;
+
+  @media (min-width: $medium) {
+    display: none;
   }
 }
 
@@ -154,6 +204,7 @@ a {
 .button {
   padding: 29px;
   text-decoration: none;
+  text-align: center;
 }
 .button-2 {
   float: right;
@@ -165,6 +216,7 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+  text-align: center;
 }
 
 .button-black {
@@ -173,8 +225,6 @@ a {
 }
 
 .button-primary.button-header {
-  margin-top: 5px;
-  float: right;
   letter-spacing: 1px;
   &:hover {
     background-image: -webkit-linear-gradient(270deg, #111, #111);
@@ -193,6 +243,10 @@ a {
   background-color: transparent;
   color: $gray;
   font-size: 14px;
+}
+
+.button-full {
+  width: 100%;
 }
 
 .body {
@@ -230,6 +284,14 @@ a {
 .cover-header-spacing {
   padding-top: 0px;
   padding-bottom: 30px;
+
+  @media (min-width: $medium) {
+    margin-top: -20px;
+  }
+
+  @media (min-width: $wide) {
+    margin-top: -60px;
+  }
 }
 .heading {
   font-weight: 300;
