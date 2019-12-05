@@ -14,7 +14,7 @@ if(location.search.indexOf('debug')>=0) {
 
 handlebars.registerPartial('list', require('../templates/list.partial.hbs'));
 
-window.PRTNRS = {
+window.UDP = {
   modalTimer: null,
   scrollTimer: null,
 
@@ -33,22 +33,22 @@ window.PRTNRS = {
   loadWork: function() {
     var $ourWork = $('#work-carousel');
 
-    PRTNRS.elems.$buttons = $ourWork.find('.carousel-button');
-    PRTNRS.elems.$slides = $ourWork.find('.work-slide');
+    UDP.elems.$buttons = $ourWork.find('.carousel-button');
+    UDP.elems.$slides = $ourWork.find('.work-slide');
 
     window.addEventListener('touchstart', function onFirstTouch() {
-      PRTNRS.elems.$slides.swipe({
-        swipeLeft: PRTNRS.onKeyDown,
-        swipeRight: PRTNRS.onKeyDown
+      UDP.elems.$slides.swipe({
+        swipeLeft: UDP.onKeyDown,
+        swipeRight: UDP.onKeyDown
       });
       window.removeEventListener('touchstart', onFirstTouch, false);
     });
     
-    PRTNRS.moveSlide(PRTNRS.elems.$buttons.first(), true);
+    UDP.moveSlide(UDP.elems.$buttons.first(), true);
   }, // loadWork
 
   moveSlide: function($next, first) {
-    if($next && !PRTNRS.elems.$modal) {
+    if($next && !UDP.elems.$modal) {
       $next.trigger('click').find('a').focus();
       $body.removeClass('show-modal');
     }
@@ -58,18 +58,18 @@ window.PRTNRS = {
   }, // moveSlide
 
   closeModal: function(e) {
-    clearInterval(PRTNRS.modalTimer);
+    clearInterval(UDP.modalTimer);
     if(e) {
       e.preventDefault();
     }
-    if(PRTNRS.elems.$modal) {
-      PRTNRS.elems.$modal.removeClass('in');
+    if(UDP.elems.$modal) {
+      UDP.elems.$modal.removeClass('in');
       $body.removeClass('show-modal');
       $body.find('.work-slide-overlay').blur();
-      PRTNRS.elems.$modal.data('$elem').focus();
+      UDP.elems.$modal.data('$elem').focus();
       setTimeout(function() {
         $('.modal').remove();
-        PRTNRS.elems.$modal = false;
+        UDP.elems.$modal = false;
       }, 250);
     }
     window.scrollTo(0, document.getElementById('our-work').offsetTop - 120);
@@ -78,8 +78,8 @@ window.PRTNRS = {
 
   toggleModal: function(e) {
     e.preventDefault();
-    var project = _.find(PRTNRS.data.projects, {project: this.getAttribute('data-project')}),
-        $modal = $(PRTNRS.templates['work-modal'](project)),
+    var project = _.find(UDP.data.projects, {project: this.getAttribute('data-project')}),
+        $modal = $(UDP.templates['work-modal'](project)),
         $elem = $(this);
 
     $modal.swipe('disable');
@@ -93,12 +93,12 @@ window.PRTNRS = {
     
     $modal.data('$elem', $elem);
     $modal.on('scroll', function() {
-      clearTimeout(PRTNRS.scrollTimer);
+      clearTimeout(UDP.scrollTimer);
       var $thisModal = $(this),
           $close = $thisModal.find('.modal-close');
       $close.css('opacity', 0);
-      PRTNRS.scrollTimer = setTimeout(function() {
-        clearTimeout(PRTNRS.scrollTimer);
+      UDP.scrollTimer = setTimeout(function() {
+        clearTimeout(UDP.scrollTimer);
         $close.css('opacity', '').css('top', $thisModal.scrollTop());
       }, 250);
     });
@@ -106,7 +106,7 @@ window.PRTNRS = {
     setTimeout(function() {
       $modal.addClass('in').siblings('.modal').remove();
       $body.addClass('show-modal');
-      PRTNRS.elems.$modal = $modal;
+      UDP.elems.$modal = $modal;
     }, 250);
 
     return false;
@@ -126,7 +126,7 @@ window.PRTNRS = {
     $slides.css('margin-left', '-' + ($this.data('index') * window.innerWidth) + 'px');
     $($this.attr('href')).addClass('active').focus().siblings().removeClass('active');
 
-    PRTNRS.closeModal();
+    UDP.closeModal();
     return false;
   }, // toggleSlide
 
@@ -141,7 +141,7 @@ window.PRTNRS = {
   }, // onResize
 
   onKeyDown: function(e, key) {
-    var $active = PRTNRS.elems.$buttons.filter('.active').first();
+    var $active = UDP.elems.$buttons.filter('.active').first();
 
     if(!key) {
       key = e.type==='keydown' ? e.originalEvent.key : this.getAttribute('data-key');
@@ -154,14 +154,14 @@ window.PRTNRS = {
     switch(key) {
       case 'right': 
       case 'ArrowLeft':
-        PRTNRS.moveSlide(PRTNRS.elems.$buttons.index($active)===0 ? PRTNRS.elems.$buttons.last() : $active.prev());
+        UDP.moveSlide(UDP.elems.$buttons.index($active)===0 ? UDP.elems.$buttons.last() : $active.prev());
         break;
       case 'left':
       case 'ArrowRight':
-        PRTNRS.moveSlide(PRTNRS.elems.$buttons.index($active)===PRTNRS.elems.$buttons.length-1 ? PRTNRS.elems.$buttons.first() : $active.next());
+        UDP.moveSlide(UDP.elems.$buttons.index($active)===UDP.elems.$buttons.length-1 ? UDP.elems.$buttons.first() : $active.next());
         break;
       case 'Escape':
-        PRTNRS.closeModal(e);
+        UDP.closeModal(e);
         $body.focus();
         break;
         break;
@@ -190,6 +190,6 @@ window.PRTNRS = {
 
   }, // init
 
-}; // PRTNRS
+}; // UDP
 
-PRTNRS.init();
+UDP.init();
