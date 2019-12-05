@@ -19,14 +19,11 @@
 <body class="body">
 
 	<div class="email-confirm" id="email-confirm" style="display: none">Message successfuly sent</div>
-	{{>hero}}
 	{{#each sections}}
 		{{#unless (in @root.exclude this.section)}}
-			{{>section this}}
+			{{>(lookup . 'layout')  this}}
 		{{/unless}}
 	{{/each}}
-	{{>contact-us}}
-	{{>footer}}
 
 	<script src="./assets/bundled.{{TIMESTAMP}}.js?v={{TIMESTAMP}}" type="text/javascript"></script>
 </body>

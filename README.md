@@ -10,7 +10,7 @@ Next, install dependencies using [npm](https://www.npmjs.com):
 ```
 $ npm install
 ```
-Then use [grunt](https://http://gruntjs.com/) to generate the code:
+Then use [grunt](http://gruntjs.com/) to generate the code:
 ```
 $ grunt
 ```

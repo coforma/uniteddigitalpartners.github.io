@@ -10,6 +10,7 @@ module.exports = function(grunt) {
   const entities = new Entities();
   const md = require('markdown-it')({
     html: true,
+    breaks: true,
     linkify: true
   });
   const mila = require('markdown-it-link-attributes');
@@ -44,9 +45,7 @@ module.exports = function(grunt) {
       if(typeof transform==='string') {
         return Handlebars.helpers[transform].call(this, entities.encode(str), needle);
       }
-      else {
-        return entities.encode(str);
-      }
+      return entities.encode(str);
     }, // prepString
     split: function(str) {
       return str.split('\n\n');
@@ -278,7 +277,6 @@ module.exports = function(grunt) {
           metadata: _.fromPairs(grunt.file.readJSON('./src/data/metadata.json').map(function(x) { return [x.property, x.content]; })),
           projects: _.sortBy(_.filter(grunt.file.readJSON('./src/data/projects.json'), 'spotlight'), ['spotlight']),
           sections: grunt.file.readJSON('./src/data/sections.json'),
-          exclude: ['hero', 'footer', 'social', 'contact-us', ]
         },
         template = Handlebars.compile(grunt.file.read('src/templates/index.hbs'));
 
