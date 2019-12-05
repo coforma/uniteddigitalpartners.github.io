@@ -83,14 +83,15 @@ a {
 }
 
 .section-hero {
-  color: $color-udp-purple;
+  color: $white;
   background-image: url('./images/hero.png');
   background-position: 0px 0px, 50% 50%;
   background-size: cover;
+  min-height: 90vh;
 
   +.section-dark {
     .section-header {
-      color: $color-udp-purple;
+      color: $white;
     }
   }
 }
@@ -165,10 +166,15 @@ a {
   font-weight: 700;
   font-size: 16px;
 }
-.button-primary.button-black.button-header {
+
+.button-black {
+  background: $black;
+  color: $white;
+}
+
+.button-primary.button-header {
   margin-top: 5px;
   float: right;
-  box-shadow: 2px 0 15px 0 hsla(0, 0%, 100%, .4);
   letter-spacing: 1px;
   &:hover {
     background-image: -webkit-linear-gradient(270deg, #111, #111);
@@ -349,5 +355,41 @@ a {
   &:hover {
     background: #202020;
   }
-} // .strip
+}
 
+// Section styles
+.section-competencies,
+.section-our-approach,
+.section-dark {
+  background-position: 0px 0px, 50% 50%;
+  background-size: cover;
+  color: $white;
+}
+
+.section-competencies {
+  background-image: url('./images/bg1.svg');
+}
+
+.section-our-approach {
+  background-image: url('./images/bg2.svg');
+}
+
+.section-dark {
+  background-image: url('./images/bg3.svg');
+}
+
+.section-about-us {
+
+  .section-header {
+    color: $white;
+  }
+}
+
+.section-our-work,
+.section-differentiators {
+
+  .section-header {
+    color: $color-udp-light-green;
+  }
+}
+// .strip
