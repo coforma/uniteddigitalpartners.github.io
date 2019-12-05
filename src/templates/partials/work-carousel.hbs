@@ -10,7 +10,7 @@
 					<div class="work-slides">
 						{{#each @root.projects}}
 						<div class="work-slide" data-partner="{{encode partner}}" data-project="{{encode project}}" id="slide-{{hyphenize project}}" data-index="{{@index}}">
-							<img src="./assets/images/work/{{unique}}-2.jpg" alt="{{project}}" class="work-slide--image" />
+							<img src="./assets/images/work/{{image}}-2.jpg" alt="{{project}}" class="work-slide--image" />
 							<a href="#modal-{{hyphenize project}}" class="work-slide-overlay" data-partner="{{encode partner}}" data-project="{{encode project}}" data-toggle="modal" title="{{encode project}} with {{encode partner}}" tabindex="0">
 								<div class="button button-primary button-black">Project Details</div>
 							</a>

@@ -1,6 +1,6 @@
 [
   {
-    "id": null,
+    "id": 101,
     "unique": "diffusion-marketplace",
     "spotlight": 1,
     "partner": "Veterans Health Administration",
@@ -13,14 +13,14 @@
     "metadata": "The Diffusion Marketplace empowers VHA practitioners and other employees to identify and disseminate promising healthcare practices.",
     "slides": null,
     "leads": [],
-    "image": null,
+    "image": "diffusion-marketplace",
     "testimonial": null,
     "source": null,
     "tools": null,
     "testimonials": null
   },
   {
-    "id": null,
+    "id": 102,
     "unique": "API-Scorecard",
     "spotlight": 2,
     "partner": "Veterans Affairs",
@@ -33,14 +33,14 @@
     "metadata": "The API Scorecard governance tool enabled the VA to begin experimenting with how best to govern their portfolio of APIs.",
     "slides": null,
     "leads": [],
-    "image": null,
+    "image": "API-Scorecard",
     "testimonial": null,
     "source": null,
     "tools": null,
     "testimonials": null
   },
   {
-    "id": null,
+    "id": 103,
     "unique": "design-thinking-for-modern-health-IT",
     "spotlight": 3,
     "partner": "Health and Human Services | Indian Health Service",
@@ -53,7 +53,7 @@
     "metadata": "In a Design Thinking project for the Indian Health Service, we used a Human-Centered Design approach to provide insights into the technology needs and goals of American Indian and Alaska Native healthcare facilities to inform future investments in infrastructure and software.",
     "slides": null,
     "leads": [],
-    "image": null,
+    "image": "design-thinking-for-modern-health-IT",
     "testimonial": null,
     "source": null,
     "tools": null,

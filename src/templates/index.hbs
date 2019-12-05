@@ -17,13 +17,13 @@
 	{{/if}}
 </head>
 <body class="body">
-
 	<div class="email-confirm" id="email-confirm" style="display: none">Message successfuly sent</div>
-	{{#each sections}}
-		{{#unless (in @root.exclude this.section)}}
-			{{>(lookup . 'layout')  this}}
-		{{/unless}}
-	{{/each}}
+
+{{#each sections}}
+	{{#if layout}}
+		{{>(lookup . 'layout') this}}
+	{{/if}}
+{{/each}}
 
 	<script src="./assets/bundled.{{TIMESTAMP}}.js?v={{TIMESTAMP}}" type="text/javascript"></script>
 </body>

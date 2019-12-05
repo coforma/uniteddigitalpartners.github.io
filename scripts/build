@@ -13,10 +13,17 @@ nc='\033[0m'$blackBG
 project=$(pwd | sed -e "s/.*\///g")
 branch=$(git rev-parse --abbrev-ref HEAD)
 
+# if the version hasn't been bumped, bump it
+packageDiff=$(git diff package.json)
+if [ ${#packageDiff} -eq 0 ]
+then
+grunt bump:patch
+fi
+
 # get everything ready
 echo "Getting version number.\n"
 grunt version
-grunt build
+grunt build --production
 
 # figure out the version
 version=$(cat VERSION)
@@ -54,3 +61,5 @@ git checkout $branch
 grunt collect
 
 echo "${green}Done!${nc}\n\n"
+
+echo "\n  To deploy, use this:\n\n      ${cyan}git push --force origin latest:master${nc}\n"
