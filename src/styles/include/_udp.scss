@@ -170,7 +170,7 @@ a {
   color: $white;
 
   a {
-    color: $light-blue;
+    color: $color-udp-orange;
     text-decoration: underline;
   }
 
@@ -335,7 +335,11 @@ a {
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 1px solid $light-gray;
+  background-image: url('./images/footer-bg.svg');
+  background-position: top -2px center;
+  background-size: cover;
+  font-weight: $font-normal;
+  color: $white;
 }
 .social-links {
   display: inline-block;
@@ -438,6 +442,7 @@ a {
 
 .section-dark {
   background-image: url('./images/bg3.svg');
+  background-position: bottom center;
 }
 
 .section-about-us {
