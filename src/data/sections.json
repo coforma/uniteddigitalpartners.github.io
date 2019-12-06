@@ -1,5 +1,5 @@
-{
-  "hero": {
+[
+  {
     "section": "hero",
     "layout": "hero",
     "style": null,
@@ -8,7 +8,7 @@
     "copy2": "We believe in ethical, inclusive design that is transparent, open source, and Veteran-centric.",
     "carousel": null
   },
-  "about-us": {
+  {
     "section": "about-us",
     "layout": "section",
     "style": null,
@@ -17,25 +17,25 @@
     "copy2": "We retain historically disadvantaged business certifications through our ownership, including HUBZone and SDVOSB designations that make us eligible for set-asides. Our leadership is comprised of immigrants and users of VA systems. ",
     "carousel": null
   },
-  "competencies": {
+  {
     "section": "competencies",
     "layout": "section",
     "style": null,
     "heading": "Core Competencies",
-    "copy": "**Tech and Data**\nSoftware Development, Open Source, APIs, Lean Agile Engineering, Cloud Computing, Machine Learning, Data Science, Legacy Modernization, Digital Transformation, DevSecOps\n\n**Procurement**\nAcquisitions, Contracting, Vendor Management\n\n**People and Organization**\nBureaucracy Hacking, Product Management, Agile Project Management, Innovation Labs, Training\n\n**Design and Content**\nHuman-Centered Design, User Research, Content Strategy, User Experience (UX)Design, Brand and Identity, Illustration, Copywriting, Accessibility\n\n**Policies and Standards**\nFederal Acquisition Regulation, Paperwork Reduction Act, FISMA, Privacy Act / HIPAA / FERPA, Section 508, Schedule A(r) Hiring Authority, Authority to Operate (ATO)",
+    "copy": "**Tech and Data**\nSoftware Development, Open Source, APIs, Lean Agile Engineering, Cloud Computing, Machine Learning, Data Science, Legacy Modernization, Digital Transformation, DevSecOps\n\n**Procurement**\nAcquisitions, Contracting, Vendor Management\n\n**People and Organization**\nBureaucracy Hacking, Product Management, Agile Project Management, Innovation Labs, Training\n\n**Design and Content**\nHuman-Centered Design, User Research, Content Strategy, User Experience (UX) Design, Brand and Identity, Illustration, Copywriting, Accessibility\n\n**Policies and Standards**\nFederal Acquisition Regulation, Paperwork Reduction Act, FISMA, Privacy Act / HIPAA / FERPA, Section 508, Schedule A(r) Hiring Authority, Authority to Operate (ATO)",
     "copy2": null,
     "carousel": null
   },
-  "our-work": {
+  {
     "section": "our-work",
     "layout": "section",
     "style": null,
     "heading": "Our Work",
     "copy": "WORK CAROUSEL",
-    "copy2": "There's a lot more we've done, but we want to talk about what we can do next—with you.",
+    "copy2": "There's a lot more we've done, but we want to talk about what we can do next—with you. ",
     "carousel": true
   },
-  "our-approach": {
+  {
     "section": "our-approach",
     "layout": "section",
     "style": null,
@@ -44,16 +44,16 @@
     "copy2": null,
     "carousel": null
   },
-  "differentiators": {
+  {
     "section": "differentiators",
     "layout": "section",
     "style": null,
     "heading": "Differentiators",
     "copy": "* Founder, 18F\n* Board Director & President Elect, AIGA\n* Former White House Creative Director \n* Founder, DotGov Design initiative and conference (AIGA DC)\n* Co-founder & member, Digital Services\n* Coalition (DSC)\n* Veterans in Procurement (VIP) Graduate\n* National Veteran Small Business Coalition member\n   \n",
-    "copy2": "* Former Intel Community member\n* Former Consumer Financial Protection Bureau (CFPB)\n* Former United States Digital Service (USDS) Directors, served at:\n* Department of Defense (DoD)\n* Department of Homeland Security (DHS)\n* United States Department of Agriculture (USDA)\n* United States Citizenship and Immigration Services (USCIS)",
+    "copy2": "* Former Intel Community member\n* Former Consumer Financial Protection Bureau (CFPB)\n* Former United States Digital Service (USDS) Directors, served at:\n    * Department of Defense (DoD)\n    * Department of Homeland Security (DHS)\n    * United States Department of Agriculture (USDA)\n    * United States Citizenship and Immigration Services (USCIS)",
     "carousel": null
   },
-  "contact-us": {
+  {
     "section": "contact-us",
     "layout": "contact-us",
     "style": null,
@@ -62,13 +62,13 @@
     "copy2": "CONTACT FORM",
     "carousel": null
   },
-  "footer": {
+  {
     "section": "footer",
     "layout": "footer",
     "style": null,
     "heading": null,
-    "copy": "1200 18th St NW #700\r\nWashington, DC 20036\r\n302-505-1472\r\n\r\nDUNS:  117197690\tCAGE: \t8E0F6\r\nNAICS Codes: \r\n541519\t   PSC:\tD322, D399, AZ15\r\n541511\t   PSC:\tD308, D307, D306, \r\n\t             \tD302, AZ14, AZ12\r\n541512\t   PSC:\tB544\r\n541430   PSC:\tAZ11, D318\r\n",
-    "copy2": null,
+    "copy": "1200 18th St NW #700\nWashington, DC 20036\n\n302-505-1472\n\n",
+    "copy2": "**DUNS:**  117197690        CAGE:         8E0F6\n\n**NAICS Codes:** \n541519           PSC:        D322, D399, AZ15\n541511           PSC:        D308, D307, D306, \n                             D302, AZ14, AZ12\n541512           PSC:        B544\n541430   PSC:        AZ11, D318",
     "carousel": null
   }
-}
+]

@@ -262,11 +262,13 @@ $slide-width-large: 100vw;
 
   .work--partner {
     font-size: 1.1em;
+    font-weight: normal;
   }
 
   .work--project {
     font-size: 2em;
     letter-spacing: -0.01em;
+    font-weight: $font-black;
   }
 
   .work--tags {

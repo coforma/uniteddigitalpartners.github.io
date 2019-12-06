@@ -1,23 +1,25 @@
-	<div class="section section-{{style}} section-{{section}}" id="{{section}}">
+  <div class="section section-{{style}} section-{{section}}" id="{{section}}">
 
-		<h4 class="section-header" tabindex="0">{{heading}}</h4>
+    <h4 class="section-header" tabindex="0">{{heading}}</h4>
 
-		<div class="container-margin w-container {{hyphenize section}}-container">
-			<div class="body-text">
-				{{#if carousel}}
-				{{>work-carousel}}
-				{{else}}
-				{{{encodeParagraph copy}}}
-				{{/if}}
-			</div>
-		</div>
+    <div class="container-content-wrap">
+      <div class="container-margin w-container {{hyphenize section}}-container">
+        <div class="body-text">
+          {{#if carousel}}
+          {{>work-carousel}}
+          {{else}}
+          {{{encodeParagraph copy}}}
+          {{/if}}
+        </div>
+      </div>
 
-		{{#if copy2}}
-		<div class="container-margin w-container">
-			<div class="body-text">
-				{{{encodeParagraph copy2}}}
-			</div>
-		</div>
-		{{/if}}
+      {{#if copy2}}
+      <div class="container-margin w-container">
+        <div class="body-text">
+          {{{encodeParagraph copy2}}}
+        </div>
+      </div>
+      {{/if}}
+    </div>
 
-	</div>
+  </div>

@@ -56,7 +56,7 @@ a {
 
 .section-header {
   // color: $white;
-  color: $gray;
+  color: $color-udp-purple;
   position: relative;
   z-index: 1;
   padding: 0 20px 20px;
@@ -335,11 +335,21 @@ a {
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #010658;
   background-image: url('./images/footer-bg.svg');
   background-position: top -2px center;
   background-size: cover;
   font-weight: $font-normal;
   color: $white;
+  line-height: 1.5;
+
+  .w-container {
+    display: flex;
+
+    div {
+      margin-right: 48px;
+    }
+  }
 }
 .social-links {
   display: inline-block;
@@ -460,15 +470,52 @@ a {
   }
 }
 
+.section-our-work {
+
+  .body-text > p {
+    color: $color-udp-purple;
+    font-size: 26px;
+    font-weight: $font-black;
+  }
+}
+
 .section-differentiators {
+
+  .container-content-wrap {
+    padding-top: 32px;
+
+    @media (min-width: $medium) {
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 940px;
+    }
+
+
+    .w-container {
+      margin: 0;
+
+      @media (min-width: $medium) {
+        width: 45%;
+      }
+    }
+  }
 
   ul {
     list-style: none;
+    padding: 0;
 
     > li {
-      border-top: 1px solid $lighter-gray;
+      border-top: 1px solid $light-gray;
       font-weight: $font-normal;
+      line-height: 1.5;
       padding: 1em 0;
+
+      li {
+        border: 0;
+        margin-left: 40px;
+      }
     }
   }
 }
