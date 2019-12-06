@@ -68,7 +68,7 @@
     "style": null,
     "heading": null,
     "copy": "1200 18th St NW #700\nWashington, DC 20036\n\n302-505-1472\n\n",
-    "copy2": "**DUNS:**  117197690        CAGE:         8E0F6\n\n**NAICS Codes:** \n541519           PSC:        D322, D399, AZ15\n541511           PSC:        D308, D307, D306, \n                             D302, AZ14, AZ12\n541512           PSC:        B544\n541430   PSC:        AZ11, D318",
+    "copy2": "**DUNS:**  117197690    **CAGE:** 8E0F6\n\n**NAICS Codes:** \n* 541519   \n    * PSC: \n           * D322 \n           * D399\n           * AZ15\n541511   PSC: D308, D307, D306, \n                          D302, AZ14, AZ12\n541512   PSC: B544\n541430   PSC: AZ11, D318\n",
     "carousel": null
   }
 ]
