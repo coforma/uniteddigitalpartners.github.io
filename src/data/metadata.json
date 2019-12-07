@@ -21,7 +21,7 @@
   },
   {
     "property": "og:image",
-    "content": "https://uniteddigitalpartners.io/assets/images/uniteddigitalpartners-preview.jpg"
+    "content": "http://www.uniteddigitalpartners.io/assets/images/uniteddigitalpartners-preview.jpg"
   },
   {
     "property": "og:image:width",
@@ -57,7 +57,7 @@
   },
   {
     "property": "twitter:image",
-    "content": "https://uniteddigitalpartners.io/assets/images/uniteddigitalpartners-preview.jpg"
+    "content": "http://www.uniteddigitalpartners.io/assets/images/uniteddigitalpartners-preview.jpg"
   },
   {
     "property": "twitter:card",
