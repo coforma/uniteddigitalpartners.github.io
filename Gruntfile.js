@@ -5,7 +5,7 @@ module.exports = function(grunt) {
       pkg = grunt.file.readJSON('package.json'),
       basePath = '/';
 
-  const Handlebars = require('Handlebars');
+  const Handlebars = require('handlebars');
   const Entities = require('html-entities').AllHtmlEntities;
   const entities = new Entities();
   const md = require('markdown-it')({
