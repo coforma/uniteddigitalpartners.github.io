@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/prtnrs/uniteddigitalpartners.github.io"
   },
-  "author": "",
+  "author": "infinityplusone",
   "license": "LicenseRed-README.md",
   "private": true,
   "main": "Gruntfile.js",
@@ -24,6 +24,9 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
     "handlebars": "^4.4.3",
     "hbsfy": "^2.8.1",
     "html-entities": "^1.2.1",
@@ -31,7 +34,6 @@
     "jquery-touchswipe": "^1.6.19",
     "lodash": "^4.17.11",
     "markdown-it": "^10.0.0",
-    "markdown-it-link-attributes": "^3.0.0",
-    "node-sass": "^4.14.1"
+    "markdown-it-link-attributes": "^3.0.0"
   }
 }
