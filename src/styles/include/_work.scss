@@ -126,18 +126,31 @@ $slide-width-large: 100vw;
     padding: 15px 10px 15px 15px;
     z-index: 2;
   }
-
+  
+  .work-slide--role {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 10px;
+    color: $white;
+    font-size: 1em; 
+  }
+  
   .work-slide--partner {
+    display: flex;
+    align-items: center;
     position: relative;
     width: 100%;
     font-size: 1em;
     font-family: $font;
     line-height: 1.2;
     color: $white;
-    height: 34px;
+    height: 60px;
   }
 
   .work-slide--project {
+    display: flex;
+    align-items: center;
     position: relative;
     width: 100%;
     font-family: $serif-font;
@@ -145,7 +158,8 @@ $slide-width-large: 100vw;
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: $white;
-    max-height: 52px;
+    height: 50px;
+    max-height: 60px;
   }
 
   .work-slide-overlay {
@@ -194,7 +208,6 @@ $slide-width-large: 100vw;
       .work-slide--project {
         font-size: 1.25em;
         letter-spacing: normal;
-        max-height: 60px;
       }
     }
 
@@ -237,8 +250,6 @@ $slide-width-large: 100vw;
       .work-slide--project {
         letter-spacing: 0.01em;
         font-size: 1.5em;
-        max-height: 52px;
-        height: 52px;
       }
 
     }
