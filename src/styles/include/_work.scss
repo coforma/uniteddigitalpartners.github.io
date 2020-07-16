@@ -125,15 +125,19 @@ $slide-width-large: 100vw;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.13) 20.54%, rgba(50, 58, 68, 0.7) 86.25%);
     padding: 15px 10px 15px 15px;
     z-index: 2;
+    padding-bottom: 20px;
   }
   
   .work-slide--role {
     position: absolute;
     top: 0;
+    left: 0;
     right: 0;
-    padding: 15px 10px;
+    padding: 5px 15px;
     color: $white;
-    font-size: 1em; 
+    font-size: 1em;
+    text-align: right;
+    background: fade-out($black, 0.7);
   }
   
   .work-slide--partner {

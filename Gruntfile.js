@@ -25,7 +25,6 @@ module.exports = function(grunt) {
     decode: function(str) {
       return entities.decode(str);
     }, // decode
-  
     encode: function(str) {
       return md.renderInline(Handlebars.helpers.prepString.apply(this, Array.prototype.slice.call(arguments)));
     }, // encode

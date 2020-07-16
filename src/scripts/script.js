@@ -4,7 +4,7 @@ var $ = require('jquery'),
     $body = $('body'),
     $window = $(window);
 
-require('jquery-touchSwipe');
+require('jquery-touchswipe');
 require('./lib/email.js');
 
 if(location.search.indexOf('debug')>=0) {
@@ -78,7 +78,7 @@ window.UDP = {
 
   toggleModal: function(e) {
     e.preventDefault();
-    var project = _.find(UDP.data.projects, {project: this.getAttribute('data-project')}),
+    var project = _.find(UDP.data.projects, {unique: this.getAttribute('data-id')}),
         $modal = $(UDP.templates['work-modal'](project)),
         $elem = $(this);
 
