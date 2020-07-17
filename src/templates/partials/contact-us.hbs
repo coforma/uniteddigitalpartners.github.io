@@ -8,10 +8,10 @@
 			</div>
 		</div>
 
-		<div class="container-margin w-container">
+		{{!-- <div class="container-margin w-container">
 
 			<div class="form-block w-form">
-				<form action="https://tools.andpartners.io/.netlify/functions/sendgrid" method="POST" data-netlify="true" name="contact-form" id="contact-form" data-name="Email Form" class="form">
+				<form action="http://localhost:8888/.netlify/functions/sendgrid" method="POST" data-netlify="true" name="contact-form" id="contact-form" data-name="Email Form" class="form">
 					<input type="hidden" name="source" value="webform" />
 					<input type="hidden" name="domain" value="uniteddigitalpartners.io" />
 					<input type="hidden" name="recipient" value="business@uniteddigitalpartners.io" />
@@ -24,7 +24,7 @@
 					<input type="submit" value="Submit" data-wait="Please wait..." class="button-primary w-button">
 				</form>
 
-				{{!-- <form action="zhttps://us-central1-prtnrs-web.cloudfunctions.net/web-email-contact" method="POST" id="email-form" name="email-form" data-name="Email Form" method="post" class="form">
+				<!--<form action="zhttps://us-central1-prtnrs-web.cloudfunctions.net/web-email-contact" method="POST" id="email-form" name="email-form" data-name="Email Form" method="post" class="form">
 					<label for="name" class="field-label">Name</label>
 					<input type="text" id="name" name="name" data-name="Name" maxlength="256" class="text-field w-input" required>
 					<label for="email" class="field-label">Email Address</label>
@@ -32,8 +32,8 @@
 					<label class="field-label">How can we help?</label>
 					<textarea id="message" name="message" placeholder="Type your message here" maxlength="5000" required="" class="text-field w-input" required></textarea>
 					<input type="submit" value="Submit" data-wait="Please wait..." class="button-primary w-button">
-				</form> --}}
-				{{!-- <div id="form-inflight" class="sending-message">
+				</form>
+				<div id="form-inflight" class="sending-message">
 					<div>Sending message...</div>
 				</div>
 				<div id="form-ok" class="success-message w-form-done"><img src="./assets/images/checkmark-01.svg" width="20" alt="" class="image">
@@ -41,10 +41,10 @@
 				</div>
 				<div id="form-notok" class="error-message w-form-fail">
 					<div>Oops! Something went wrong while submitting the form.</div>
-				</div> --}}
+				</div> -->
 			</div>
 
-		</div>
+		</div> --}}
 		<div class="container-margin w-container">
 			<div class="body-text">
 				<p>{{{encode copy2}}}</p>

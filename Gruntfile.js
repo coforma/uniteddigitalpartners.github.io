@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   const Handlebars = require('handlebars');
   const Entities = require('html-entities').AllHtmlEntities;
   const entities = new Entities();
+
   const md = require('markdown-it')({
     html: true,
     linkify: true
@@ -94,7 +95,7 @@ module.exports = function(grunt) {
     connect: {
       dev: {
         options: {
-          port: 8888,
+          port: 4561,
           base: './',
           hostname: 'localhost',
           // livereload: true,

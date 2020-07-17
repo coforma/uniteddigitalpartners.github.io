@@ -360,7 +360,8 @@ a {
   .w-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 
     div {
       flex: 1 1 50%;
@@ -370,6 +371,16 @@ a {
       }
       
       &:last-child {
+        margin-top: 1rem;
+      }
+    }
+    
+    @media (min-width: $medium) {
+      flex-direction: row;
+      align-items: center;
+
+      > :last-child {
+        margin-top: 0;
         text-align: right;
       }
     }
@@ -504,9 +515,11 @@ a {
 }
 
 .section-contact-us {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 
   .body-text {
+    padding-right: 30px;
+
     > h3 {
       font-size: 26px;
       font-weight: $font-black;
@@ -598,8 +611,11 @@ a {
     padding-left: 1.5rem;
     
     li {
-      line-height: 1;
       margin-bottom: 1rem;
+
+      @media (min-width: $wide) {
+        line-height: 1;
+      }
     }
   }
   

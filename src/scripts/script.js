@@ -5,7 +5,6 @@ var $ = require('jquery'),
     $window = $(window);
 
 require('jquery-touchswipe');
-// require('./lib/email.js');
 
 if(location.search.indexOf('debug')>=0) {
   window.$ = $;
@@ -154,11 +153,15 @@ window.UDP = {
     switch(key) {
       case 'right': 
       case 'ArrowLeft':
-        UDP.moveSlide(UDP.elems.$buttons.index($active)===0 ? UDP.elems.$buttons.last() : $active.prev());
+        if(!$(e.target).closest('form').length) {
+          UDP.moveSlide(UDP.elems.$buttons.index($active)===0 ? UDP.elems.$buttons.last() : $active.prev());
+        }
         break;
       case 'left':
       case 'ArrowRight':
-        UDP.moveSlide(UDP.elems.$buttons.index($active)===UDP.elems.$buttons.length-1 ? UDP.elems.$buttons.first() : $active.next());
+        if(!$(e.target).closest('form').length) {
+          UDP.moveSlide(UDP.elems.$buttons.index($active)===UDP.elems.$buttons.length-1 ? UDP.elems.$buttons.first() : $active.next());
+        }
         break;
       case 'Escape':
         UDP.closeModal(e);
@@ -187,9 +190,21 @@ window.UDP = {
         e.preventDefault();
       
         var $form = $(this);
-        $.post($form.attr('action'), $form.serialize()).then(function() {
-          alert('Thank you!');
-        });
+        $.ajax({
+          type: 'POST',
+          url: $form.attr('action'),
+          dataType: 'json',
+          data: JSON.stringify(Object.assign({}, ...$form.serializeArray().map(field => { return { [field.name]: field.value } }))),
+          success: function() {
+            alert('yay');
+          },
+          error: function(err) {
+            console.log(err);
+          }
+        })
+        // $.post($form.attr('action'), $form.serialize()).then(function() {
+        //   alert('Thank you!');
+        // });
       });
 
     $window
