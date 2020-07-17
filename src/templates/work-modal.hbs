@@ -1,4 +1,4 @@
-	<div class="modal modal--work fade" id="modal-{{hyphenize project}}">
+	<div class="modal modal--work fade" id="modal-{{hyphenize unique}}">
 		<div class="modal-content">
 			<div class="modal-header">
 				<h3 class="work--partner">{{{partner}}}</h3>
@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<div class="modal-body">
-				<img src="./assets/images/work/{{image}}.jpg" alt="{{project}}" class="work--image" />
+				<img src="./assets/images/{{image}}-wide.{{image-ext}}" alt="{{project}}" class="work--image" />
 				<div class="modal-body-text">
 					<div class="work--challenge">
 						{{#each (reformat challenge)}}

@@ -1,7 +1,12 @@
+	<meta charset="utf-8">
+{{#with metadata}}
+	<title>{{{title}}}</title>  
+{{/with}}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 {{#each metadata}}
-<meta name="{{@key}}" content="{{{this}}}">
+	<meta name="{{@key}}" content="{{{this}}}">
 {{/each}}
 {{#with metadata}}
-<meta itemprop="name" content="{{{title}}}">
-<meta itemprop="description" content="{{{description}}}">
+	<meta itemprop="name" content="{{{title}}}">
+	<meta itemprop="description" content="{{{description}}}">
 {{/with}}

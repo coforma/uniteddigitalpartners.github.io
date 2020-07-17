@@ -1,21 +1,34 @@
-	<div class="section section-dark" id="contact-us">
+	<div class="section section-dark section-contact-us" id="contact-us">
 
 		<h4 class="section-header" tabindex="0">Let&#x27;s Talk</h4>
 
 		<div class="container-margin w-container">
 			<div class="body-text">
-				<p>{{{encode copy}}}</p>
+				<h3>{{{encode copy}}}</h3>
 			</div>
 		</div>
 
-		<div class="container-margin w-container">
+		{{!-- <div class="container-margin w-container">
 
 			<div class="form-block w-form">
-				<form action="zhttps://us-central1-prtnrs-web.cloudfunctions.net/web-email-contact" method="POST" id="email-form" name="email-form" data-name="Email Form" method="post" class="form">
+				<form action="http://localhost:8888/.netlify/functions/sendgrid" method="POST" data-netlify="true" name="contact-form" id="contact-form" data-name="Email Form" class="form">
+					<input type="hidden" name="source" value="webform" />
+					<input type="hidden" name="domain" value="uniteddigitalpartners.io" />
+					<input type="hidden" name="recipient" value="business@uniteddigitalpartners.io" />
 					<label for="name" class="field-label">Name</label>
 					<input type="text" id="name" name="name" data-name="Name" maxlength="256" class="text-field w-input" required>
 					<label for="email" class="field-label">Email Address</label>
-					<input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" id="email" required="">
+					<input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" id="email" required>
+					<label class="field-label">How can we help?</label>
+					<textarea id="message" name="message" placeholder="Type your message here" maxlength="5000" required="" class="text-field w-input" required></textarea>
+					<input type="submit" value="Submit" data-wait="Please wait..." class="button-primary w-button">
+				</form>
+
+				<!--<form action="zhttps://us-central1-prtnrs-web.cloudfunctions.net/web-email-contact" method="POST" id="email-form" name="email-form" data-name="Email Form" method="post" class="form">
+					<label for="name" class="field-label">Name</label>
+					<input type="text" id="name" name="name" data-name="Name" maxlength="256" class="text-field w-input" required>
+					<label for="email" class="field-label">Email Address</label>
+					<input type="email" class="text-field w-input" maxlength="256" n1ame="email" data-name="Email" id="email" required="">
 					<label class="field-label">How can we help?</label>
 					<textarea id="message" name="message" placeholder="Type your message here" maxlength="5000" required="" class="text-field w-input" required></textarea>
 					<input type="submit" value="Submit" data-wait="Please wait..." class="button-primary w-button">
@@ -28,9 +41,13 @@
 				</div>
 				<div id="form-notok" class="error-message w-form-fail">
 					<div>Oops! Something went wrong while submitting the form.</div>
-				</div>
+				</div> -->
 			</div>
 
+		</div> --}}
+		<div class="container-margin w-container">
+			<div class="body-text">
+				<p>{{{encode copy2}}}</p>
+			</div>
 		</div>
-
 	</div>

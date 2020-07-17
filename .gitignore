@@ -7,16 +7,20 @@ cache
 package-lock.json
 .htpasswd
 
+# local dev
+Dockerfile
+docker-compose.yml
+
 # dependencies
 node_modules
 
 # generated files
-/index.html
-/work/*.html
+/*.html
 /assets
 /src/css
 
 # misc
 logging-in.txt
 /vendor
-
+/scripts
+sendgrid.env

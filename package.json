@@ -1,24 +1,32 @@
 {
-  "name": "uniteddigitalpartners.github.io",
-  "version": "0.1.13",
+  "name": "uniteddigitalpartners.io",
+  "version": "1.0.0",
   "description": "United Digital Partners Website",
   "repository": {
     "type": "git",
     "url": "https://github.com/prtnrs/uniteddigitalpartners.github.io"
   },
-  "author": "",
+  "author": "infinityplusone",
   "license": "LicenseRed-README.md",
   "private": true,
   "main": "Gruntfile.js",
+  "scripts": {
+    "build": "grunt build",
+    "dev": "grunt dev"
+  },
   "devDependencies": {
-    "colors": "^1.4.0",
-    "grunt": "^1.0.4",
+    "grunt": "^1.2.1",
     "grunt-autoprefixer": "^3.0.4",
-    "grunt-browserify": "^5.3.0",
+    "grunt-browserify": "^5.0.0",
     "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-connect": "^2.1.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
     "handlebars": "^4.4.3",
     "hbsfy": "^2.8.1",
     "html-entities": "^1.2.1",
@@ -27,6 +35,5 @@
     "lodash": "^4.17.11",
     "markdown-it": "^10.0.0",
     "markdown-it-link-attributes": "^3.0.0"
-  },
-  "dependencies": {}
+  }
 }

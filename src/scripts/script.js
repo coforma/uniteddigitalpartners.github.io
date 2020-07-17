@@ -4,8 +4,7 @@ var $ = require('jquery'),
     $body = $('body'),
     $window = $(window);
 
-require('jquery-touchSwipe');
-require('./lib/email.js');
+require('jquery-touchswipe');
 
 if(location.search.indexOf('debug')>=0) {
   window.$ = $;
@@ -78,7 +77,7 @@ window.UDP = {
 
   toggleModal: function(e) {
     e.preventDefault();
-    var project = _.find(UDP.data.projects, {project: this.getAttribute('data-project')}),
+    var project = _.find(UDP.data.projects, {unique: this.getAttribute('data-id')}),
         $modal = $(UDP.templates['work-modal'](project)),
         $elem = $(this);
 
@@ -154,11 +153,15 @@ window.UDP = {
     switch(key) {
       case 'right': 
       case 'ArrowLeft':
-        UDP.moveSlide(UDP.elems.$buttons.index($active)===0 ? UDP.elems.$buttons.last() : $active.prev());
+        if(!$(e.target).closest('form').length) {
+          UDP.moveSlide(UDP.elems.$buttons.index($active)===0 ? UDP.elems.$buttons.last() : $active.prev());
+        }
         break;
       case 'left':
       case 'ArrowRight':
-        UDP.moveSlide(UDP.elems.$buttons.index($active)===UDP.elems.$buttons.length-1 ? UDP.elems.$buttons.first() : $active.next());
+        if(!$(e.target).closest('form').length) {
+          UDP.moveSlide(UDP.elems.$buttons.index($active)===UDP.elems.$buttons.length-1 ? UDP.elems.$buttons.first() : $active.next());
+        }
         break;
       case 'Escape':
         UDP.closeModal(e);
@@ -182,7 +185,27 @@ window.UDP = {
       .on('click', '[data-toggle="slide"][data-key]', this.onKeyDown)
       .on('click focus', '[data-toggle="slide"]', this.toggleSlide)
       .on('click', '[data-toggle="modal"]', this.toggleModal)
-      .on('click', '[data-close="modal"]', this.closeModal);
+      .on('click', '[data-close="modal"]', this.closeModal)
+      .on('submit', '#contact-form', function(e) {
+        e.preventDefault();
+      
+        var $form = $(this);
+        $.ajax({
+          type: 'POST',
+          url: $form.attr('action'),
+          dataType: 'json',
+          data: JSON.stringify(Object.assign({}, ...$form.serializeArray().map(field => { return { [field.name]: field.value } }))),
+          success: function() {
+            alert('yay');
+          },
+          error: function(err) {
+            console.log(err);
+          }
+        })
+        // $.post($form.attr('action'), $form.serialize()).then(function() {
+        //   alert('Thank you!');
+        // });
+      });
 
     $window
       .on('resize', this.onResize)
@@ -191,5 +214,9 @@ window.UDP = {
   }, // init
 
 }; // UDP
+
+
+
+
 
 UDP.init();

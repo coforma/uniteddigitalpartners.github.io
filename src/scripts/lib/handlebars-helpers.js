@@ -3,8 +3,6 @@
 'use strict';
 
 var _ = require('lodash'),
-    // moment = require('moment'),
-    // pluralize = require('pluralize'),
     handlebars = require('hbsfy/runtime');
 
 const Entities = require('html-entities').AllHtmlEntities;
