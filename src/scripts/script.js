@@ -5,7 +5,7 @@ var $ = require('jquery'),
     $window = $(window);
 
 require('jquery-touchswipe');
-require('./lib/email.js');
+// require('./lib/email.js');
 
 if(location.search.indexOf('debug')>=0) {
   window.$ = $;
@@ -182,7 +182,15 @@ window.UDP = {
       .on('click', '[data-toggle="slide"][data-key]', this.onKeyDown)
       .on('click focus', '[data-toggle="slide"]', this.toggleSlide)
       .on('click', '[data-toggle="modal"]', this.toggleModal)
-      .on('click', '[data-close="modal"]', this.closeModal);
+      .on('click', '[data-close="modal"]', this.closeModal)
+      .on('submit', '#contact-form', function(e) {
+        e.preventDefault();
+      
+        var $form = $(this);
+        $.post($form.attr('action'), $form.serialize()).then(function() {
+          alert('Thank you!');
+        });
+      });
 
     $window
       .on('resize', this.onResize)
@@ -191,5 +199,9 @@ window.UDP = {
   }, // init
 
 }; // UDP
+
+
+
+
 
 UDP.init();

@@ -96,7 +96,17 @@ module.exports = function(grunt) {
         options: {
           port: 8888,
           base: './',
-          livereload: true,
+          hostname: 'localhost',
+          // livereload: true,
+          middleware: function(connect, options, middlewares) {
+            middlewares.unshift(function(req, res, next) {
+                res.setHeader('Access-Control-Allow-Origin', '*');
+                res.setHeader('Access-Control-Allow-Methods', '*');
+                next();
+            });
+  
+            return middlewares;
+          }
         }
       }
     },
