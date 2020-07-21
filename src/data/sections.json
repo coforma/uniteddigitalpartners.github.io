@@ -15,7 +15,7 @@
     "style": null,
     "heading": "About",
     "copy": "United Digital Partners offers a proven approach to technology, design, and research that delivers meaningful digital services to our federal government clients. Our extensive experience working with VA and their end users allows us to readily empathize and craft digital solutions that address the unique challenges our government partners face as they transition, build, and commission products and services for the public.",
-    "copy2": "We retain historically disadvantaged business certifications through our ownership, including 8(a) and SDVOSB designations that make us eligible for set-asides. Our leadership is comprised of immigrants and users of VA system.",
+    "copy2": "We retain historically disadvantaged business certifications through our ownership, including 8(a) and SDVOSB designations that make us eligible for set-asides. Our leadership is comprised of immigrants and users of VA systems.",
     "carousel": null
   },
   "competencies": {
@@ -50,17 +50,8 @@
     "layout": "section",
     "style": null,
     "heading": "Differentiators",
-    "copy": "* Board Director & President, AIGA\n* Former White House Creative Director \n* Founder, DotGov Design initiative and conference (AIGA DC)\n* Co-founder & member, Digital Services Coalition (DSC)\n* Veterans in Procurement (VIP) Graduate\n* National Veteran Small Business Coalition member\n* Former Consumer Financial Protection Bureau (CFPB)",
-    "copy2": "* Former United States Digital Service (USDS) Directors, served at:\n* Department of Defense (DoD)\n* Department of Homeland Security (DHS)\n* United States Department of Agriculture (USDA)\n* United States Citizenship and Immigration Services (USCIS)",
-    "carousel": null
-  },
-  "contact-us": {
-    "section": "contact-us",
-    "layout": "contact-us",
-    "style": null,
-    "heading": "Let's Talk",
-    "copy": "Your vision. Our experience. A united solution.\n\nContact us today at Business@UnitedDigitalPartners.io to talk about how we can partner to solve the design challenges that impact your users most. \n",
-    "copy2": "CONTACT FORM",
+    "copy": "#### Halfaker & Executive Leadership\n* Most Valuable Employer for Military\n* Washington Technology Fast 50\n* GovCon Executive of the Year\n* GovCon Company of the Year Finalist Washington Technology Government Contractor CTO Innovator Award\n* FedHealth IT Innovation Award\n* Leading for Impact Women in Leadership\n* Women in Technology Leadership Award",
+    "copy2": "#### &Partners\n* Chair of the Board of Directors, AIGA\n* Former White House Creative Director \n* Founder, DotGov Design initiative and conference (AIGA DC)\n* Co-founder & member, Digital Services Coalition (DSC)\n* Veterans in Procurement (VIP) Graduate\n* National Veteran Small Business Coalition member\n* Former Consumer Financial Protection Bureau (CFPB)\n* Former United States Digital Service (USDS) Directors, served at:\n- Department of Defense (DoD)\n- Department of Homeland Security (DHS)\n- United States Department of Agriculture (USDA)\n- United States Citizenship and Immigration Services (USCIS)",
     "carousel": null
   },
   "contact-us": {
